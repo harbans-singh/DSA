@@ -5,7 +5,7 @@
 #include <algorithm>
 using namespace std;
 
-/*Using brute force
+/*Using brute force O(N^3)
 //void print_vec(vector<int> vec) {
 //    for(auto x: vec) {
 //        cout << x << " ";
@@ -54,6 +54,7 @@ using namespace std;
 //}
 */
 
+//O(NlogN + N^2) = O(N^2)
 void print_vec(vector<int> vec) {
     for(auto x: vec) {
         cout << x << " ";
