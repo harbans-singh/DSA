@@ -1,3 +1,4 @@
+//program to find triplets with particular sum in a vector
 #include <iostream>
 #include <vector>
 #include <set>
