@@ -37,7 +37,6 @@ pair<int, int> subarray(vector<int> vec, int n) {
     return {left_index, right_index};
 }
 
-//1 2 3 4 5 8 6 7 9 10 11
 int main() {
     int n;
     cout << "Enter length of array: ";
