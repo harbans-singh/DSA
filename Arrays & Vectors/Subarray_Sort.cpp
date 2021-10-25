@@ -12,16 +12,18 @@ pair<int, int> subarray(vector<int> vec, int n) {
             largest = max(x, largest);
             smallest = min(x, smallest);
         }
-        if(i == n-1 && x < vec[n-2]) {
+        else if(i == n-1 && x < vec[n-2]) {
             largest = max(x, largest);
             smallest = min(x, smallest);
         }
-        if(x > vec[i+1] || x < vec[i-1]) {
+        else if(i != 0 && i != n-1 && (x > vec[i+1] || x < vec[i-1])) {
             largest = max(x, largest);
             smallest = min(x, smallest);
         }
     }
-    if(smallest = INT_MAX) {
+    cout << "Smallest: " << smallest << endl;
+    cout << "Largest: " << largest << endl;
+    if(smallest == INT_MAX) {
         return {0, 0};
     }
     int left_index {0};
