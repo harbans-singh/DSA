@@ -27,6 +27,7 @@ void printList(Node* head) {
         cout << head->data << " ";
         head = head->next;
     }
+    cout << endl;
 }
 
 Node* recursiveReverse(Node* head) {
@@ -35,7 +36,7 @@ Node* recursiveReverse(Node* head) {
     }
     Node* shead = recursiveReverse(head->next);
     head->next->next = head;
-    head = NULL;
+    head->next = NULL;
     return shead;
 }
 
